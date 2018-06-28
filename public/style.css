@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial,sans-serif;
+    line-height: normal;
+}
+body {
+    background-color: #f0f0f0;
+}
+.displaynone {
+    display: none;
+}
+
+.navbar {
+    background-color: #3a3737;
+    border-bottom: rgb(46, 45, 45) solid 1px;
+    border-top: rgb(74, 70, 70) solid 1px;
+    margin-bottom: 0;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.logo {
+    margin-top: 7px;
+}
+
+.log_ind_ud {
+    color: rgb(178, 178, 178);
+    padding: 15px;
+    cursor: pointer;
+    line-height: 20px;
+    display: block;
+    float:left;
+}
+.log_ind_ud:hover {
+    color: #fff;
+    background-color: #292727;
+}
+
+.header {
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+#content_header {
+    padding: 8px 50px 28px;
+}
+#header_h1 {
+    font-family:"Cervo W01 Regular";
+    text-transform: uppercase;
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+#header_p {
+    line-height: 1.65;
+}
+
+.produkt_article {
+    margin-bottom: 30px;
+}
+.produkt_main {
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 1px 0 #dbdbdb;
+    background-color: #fff;
+    color: #383838;
+    padding: 24px;
+}
+.produkt_tekst {
+    font-size: 13px;
+    border-top: 1px solid #eaeaea;
+    padding-top: 1.2em;
+    margin-top: 8px;
+}
+.produkt_billede {
+    transition: .1s;
+}
+.produkt_billede:hover {
+    opacity: 0.7;
+}
+.produkt_producent {
+    font-family:"Cervo W01 Regular";
+    font-size: 24px;
+    color: #757575;
+    text-transform: uppercase;
+}
+.produkt_kategori {
+    font-family:"Cervo W01 Thin";
+    font-size: 22px;
+    float: right;
+    text-transform: uppercase;
+}
+#produkt_kategori {
+    color: #487e8e;
+    transition: .2s;
+}
+#produkt_kategori:hover {
+    color: #064d63;
+    text-decoration: underline;
+}
+.produkt_navn {
+    font-family: Arial,sans-serif;
+    font-weight: 600;
+}
+.produkt_detalje_navn {
+    font-family:"Cervo W01 Regular";
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.produkt_pris {
+    font-family: "Cervo W01 Regular";
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 32px;
+    float: right;
+}
+
+.div_row {
+    margin: 0;
+}
+.row_beskrivelse {
+    height: 130px;
+}
+
+/* Admin panel */
+.no-padding {
+    padding: 0
+}
+
+table {
+    margin-top: 70px;
+}
+
+#number_format_pris, #number_format_id, #th_pris, #th_id  {
+    text-align: right;
+    padding: 8px 20px 8px 8px;
+}
+#number_format_pris, #th_pris {
+    padding-right: 50px;
+}
+
+.slet {
+    padding-right: 20px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+#beskrivelse, #info {
+    resize: none;
+    height: 100px;
+}
+
+.form-signin input {
+    margin-bottom: 10px;
+}
+.form-signin-heading {
+    text-align: center;
+}
+
+#logo_a {
+    width: 140px;
+}
+
+.billede_border {
+    border: 1px solid rgb(169, 169, 169);
+}

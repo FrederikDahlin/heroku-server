@@ -1,0 +1,35 @@
+{
+  "name": "praktisk-web-hifi-frederikdahlin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/app.js",
+  "scripts": {
+    "start": "nodemon api/app.js --ignore api/data/* --ignore api/logs/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rts-cmk-WI81/praktisk-web-hifi-FrederikDahlin.git"
+  },
+  "author": "Frederik Dahlin Karlsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rts-cmk-WI81/praktisk-web-hifi-FrederikDahlin/issues"
+  },
+  "homepage": "https://github.com/rts-cmk-WI81/praktisk-web-hifi-FrederikDahlin#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "date-and-time": "^0.6.2",
+    "express": "^4.16.2",
+    "express-fileupload": "^0.4.0",
+    "gm": "^1.23.1",
+    "guid": "0.0.12",
+    "jsonwebtoken": "^8.2.0",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.5.2",
+    "short-unique-id": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}

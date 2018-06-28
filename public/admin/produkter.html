@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hi-Fi Admin panel</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fast.fonts.net/cssapi/1da8016a-2a48-45e9-944d-48ad3dd9eee3.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="../helpers.js"></script>
+    <script>
+        if (sessionStorage['token'] == undefined) {
+            window.location.replace('../index.html');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <div class="container">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" height="35px" alt="Logo" class="logo navbar-left">
+                    </a>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="../index.html">Forside</a>
+                        </li>
+                        <li class="active">
+                            <a href="produkter.html" id="admin_produkter">Produkter</a>
+                        </li>
+                        <li>
+                            <a href="producenter.html" id="admin_producenter">Producenter</a>
+                        </li>
+                        <li>
+                            <a href="kategorier.html" id="admin_kategorier">Kategorier</a>
+                        </li>
+                        <li>
+                            <a href="" id="logud" class="log_ind_ud">Log ud</a>
+                            <!-- <a href="../index.html">Hjem</a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="contaitner-fluid header">
+        <div id="content_header" class="container">
+            <h1 id="header_h1">Admin produkter</h1>
+            <p id="header_p"></p>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row
+                        col-md-6    col-md-offset-3
+                        col-sm-8    col-sm-offset-2">
+                <h3 id="main_h3" style="text-align: center;">Opret produkt</h3>
+                <form id="form_produkter">
+                    <input id="navn" class="col-xs-12" type="text" name="navn" placeholder="Navn" onkeypress="return event.keyCode!=13">
+                    <textarea id="beskrivelse" class="col-xs-12" type="text" name="beskrivelse" placeholder="Beskrivelse" onkeypress="return event.keyCode!=13"></textarea>
+                    <section class="no-padding col-sm-6 col-xs-12">
+                        <input id="pris" class="col-sm-12   col-xs-4" type="text" name="pris" placeholder="Pris" onkeypress="return event.keyCode!=13">
+                        <select id="content_select_kategori" class="col-sm-12   col-xs-4" name="kategorier"></select>
+                        <select id="content_select_producent" class="col-sm-12  col-xs-4" name="producenter"></select>
+                        <input id="billede_upload" type="file" name="billede">
+                        <span id="fejlbesked"></span>
+                    </section>
+                    <section class="no-padding col-sm-6">
+                        <img src="../images/no-image.png" id="produkt_billede" class="billede_border" width="100%" alt="produkt billede">
+                    </section>
+                </form>
+                <button id="form_submit" class="col-xs-2" type="submit">Opret</button>
+                <a href="produkter.html" id="form_anuller" style="display:none;">anuller</a>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr id="thead_tr">
+                        <th id="th_id">id</th>
+                        <th>navn</th>
+                        <th id="th_pris">pris</th>
+                        <th>kategori</th>
+                        <th>producent</th>
+                        <th>billede</th>
+                        <th>rediger</th>
+                    </tr>
+                </thead>
+                <tbody id="content"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector('#logud').addEventListener('click', (event) => {
+            event.preventDefault();
+            delete (sessionStorage['token'])
+            window.location.replace('../index.html');
+        });
+    </script>
+    <script src="produkter.js"></script>
+    <script src="../assets/js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+2018-05-16 10:12:28 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'kategori_navn
+                producent_id
+                producent_navn
+      ' at line 5
+2018-05-16 10:12:30 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'kategori_navn
+                producent_id
+                producent_navn
+      ' at line 5
+2018-05-16 10:12:33 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'kategori_navn
+                producent_id
+                producent_navn
+      ' at line 5
+2018-05-16 10:13:41 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'kategori_navn
+                producent_id
+                producent_navn
+      ' at line 5
+2018-05-16 10:14:00 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'kategori_navn
+                producent_id
+                producent_navn
+      ' at line 5
+2018-05-16 10:23:28 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/ kategori_id
+                // kategori_navn
+                // producent_id
+ ' at line 5
+2018-05-16 10:24:17 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fk_kategori_navn
+                fk_producent_id
+                fk_producent_na' at line 5
+2018-05-16 10:26:30 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'kategori_navn
+                producent_id
+                producent_navn
+      ' at line 5
+2018-05-16 10:34:41 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'kategori_navn
+                producent_id
+                producent_navn
+      ' at line 5
+2018-05-16 10:38:13 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE fk_producent_id = ?
+                                    ORDER BY produkt_i' at line 6
+2018-05-16 10:38:16 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE fk_producent_id = ?
+                                    ORDER BY produkt_i' at line 6
+2018-05-16 10:38:18 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE fk_producent_id = ?
+                                    ORDER BY produkt_i' at line 6
+2018-05-16 10:40:26 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'kategori_navn
+                producent_id
+                producent_navn
+      ' at line 5
+2018-05-16 10:42:13 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'producent_id
+                
+            FROM produkter
+            INNER JOIN ' at line 5

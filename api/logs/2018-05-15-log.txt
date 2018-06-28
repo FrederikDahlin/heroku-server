@@ -1,0 +1,20 @@
+2018-05-15 11:59:33 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM produkter 
+ORDER BY produkt_id
+                            ASC' at line 6
+2018-05-15 12:00:01 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM produkter 
+ORDER BY produkt_id
+                            ASC' at line 6
+2018-05-15 12:02:21 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM produkter ORDER BY produkt_id
+                            ASC' at line 6
+2018-05-15 12:02:28 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM produkter ORDER BY produkt_id
+                            ASC' at line 6
+2018-05-15 12:03:24 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM produkter ORDER BY produkt_id ASC' at line 6
+2018-05-15 12:04:15 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM produkter ORDER BY produkt_id ASC' at line 6
+2018-05-15 12:05:34 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN producenter ON producent_id = fk_producent_id 
+                INNER ' at line 9
+2018-05-15 12:06:39 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM produkter
+            INNER JOIN producenter ON producent_id = fk_producent' at line 6
+2018-05-15 14:36:45 - Error: Duplicate entry '5' for key 'PRIMARY'
+2018-05-15 14:37:32 - Error: Duplicate entry '5' for key 'PRIMARY'
+2018-05-15 14:38:19 - Error: Duplicate entry '5' for key 'PRIMARY'
+2018-05-15 14:42:34 - Error: Duplicate entry '5' for key 'PRIMARY'

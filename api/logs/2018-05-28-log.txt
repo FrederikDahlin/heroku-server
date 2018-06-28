@@ -1,0 +1,2 @@
+2018-05-28 12:23:33 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ? 
+                        AND bruger_kodeord = ?' at line 4

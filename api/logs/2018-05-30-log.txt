@@ -1,0 +1,2 @@
+2018-05-30 10:21:40 - Unknown column 'producent_id' in 'where clause'
+2018-05-30 10:30:26 - Incorrect arguments to mysqld_stmt_execute

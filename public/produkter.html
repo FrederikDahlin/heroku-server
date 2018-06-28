@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hi-Fi klubben</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fast.fonts.net/cssapi/1da8016a-2a48-45e9-944d-48ad3dd9eee3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="helpers.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <div class="container">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" height="35px" alt="Logo" class="logo navbar-left">
+                    </a>
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="index.html">Forside</a>
+                            </li>
+                            <li id="li_produkter">
+                                <a href="produkter.html">Produkter</a>
+                            </li>
+                            <li id="dropdown_producenter" class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    Producenter
+                                    <b class="caret"></b>
+                                </a>
+                                <ul id="content_producenter" class="dropdown-menu"></ul>
+                            </li>
+                            <li id="dropdown_kategorier" class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    Kategorier
+                                    <b class="caret"></b>
+                                </a>
+                                <ul id="content_kategorier" class="dropdown-menu"></ul>
+                            </li>
+                            <a href="admin/produkter.html" id="admin" class="log_ind_ud">Admin</a>
+                            <a href="login/login.html" id="login" class="log_ind_ud">Log ind</a>
+                            <a href="#" id="logud" class="log_ind_ud">Log ud</a>
+                            <script>
+                                let login = document.getElementById('login');
+                                if (sessionStorage['token'] != undefined) {
+                                    login.setAttribute('class', 'displaynone');
+                                }
+                                let logout = document.getElementById('logud');
+                                let admin = document.getElementById('admin')
+                                if (sessionStorage['token'] == undefined) {
+                                    logout.setAttribute('class', 'displaynone');
+                                    admin.setAttribute('class', 'displaynone')
+                                }
+                            </script>
+                        </ul>
+                    </div>
+                    <div class="div_soeg navbar-left">
+                        <form class="navbar-form navbar-right" action="produkter.html">
+                            <label class="sr-only">Søg:</label>
+                            <input type="text" id="soeg" class="form-control col-lg-8" name="soeg" placeholder="Søg">
+                            <button type="submit" class="soeg_button navbar-right displaynone">Søg</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="contaitner-fluid header">
+        <div id="content_header" class="container">
+            <h1 id="header_h1"></h1>
+            <p id="header_p"></p>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div id="content"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector('#logud').addEventListener('click', (event) => {
+            delete (sessionStorage['token'])
+            window.location.replace('index.html');
+        });
+    </script>
+    <script src="produkter.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
